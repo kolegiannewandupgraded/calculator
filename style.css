@@ -1,0 +1,62 @@
+.container{
+    display: grid;
+    width: 30vw;
+    height: 65vh;
+    border: solid 5px gray;
+    position: relative;
+    left: 33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "screenn screenn screenn screenn"
+                        
+                        "numberss numberss numberss operatorss"
+                        "numberss numberss numberss operatorss"
+                        "numberss numberss numberss operatorss"
+                        "numberss numberss numberss operatorss";
+    background: linear-gradient(45deg, white, blue);
+    
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(253, 248, 242);
+}
+.screen{
+    grid-area: screenn;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.resultScreen{
+    width: 99%;
+    height: 60px;
+    text-align: end;
+    font-size:large;
+    border-bottom: solid black 5px;
+}
+.numbers{
+    grid-area: numberss;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    padding-right: 10px;
+    grid-row-gap: 15px;
+}
+.operators{
+    grid-area: operatorss;
+    display: grid;
+    grid-row-gap: 10px;    
+
+}
+.resultScreen1{
+    width: 98%;
+    height: 40px;
+    text-align: end;
+}
+.key{
+    background-color: gray;
+
+}
+.operand{
+    background-color: orange;
+}
